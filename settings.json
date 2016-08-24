@@ -33,6 +33,7 @@
 
   */
 
+  /*
   //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
   //You shouldn't use "dirty" for for anything else than testing or development
   "dbType" : "dirty",
@@ -40,17 +41,16 @@
   "dbSettings" : {
                    "filename" : "var/dirty.db"
                  },
-
-  /* An Example of MySQL Configuration
+  */
+  /* An Example of MySQL Configuration */
    "dbType" : "mysql",
    "dbSettings" : {
                     "user"    : "root",
                     "host"    : "localhost",
-                    "password": "",
+                    "password": "simplepass",
                     "database": "store",
                     "charset" : "utf8mb4"
                   },
-  */
 
   //the default text of a pad
   "defaultPadText" : "\n\nint main(int argc, char *argv[])\n{\n\treturn 0;\n}\n\n",
