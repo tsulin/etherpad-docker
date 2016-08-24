@@ -53,20 +53,19 @@
   */
 
   //the default text of a pad
-  "defaultPadText" : "Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at http:\/\/etherpad.org\n",
-
+  "defaultPadText" : "\n\nint main(int argc, char *argv[])\n{\n\treturn 0;\n}\n\n",
   /* Default Pad behavior, users can override by changing */
   "padOptions": {
     "noColors": false,
     "showControls": true,
     "showChat": true,
     "showLineNumbers": true,
-    "useMonospaceFont": false,
-    "userName": false,
+    "useMonospaceFont": true,
+    "userName": true,
     "userColor": false,
     "rtl": false,
-    "alwaysShowChat": false,
-    "chatAndUsers": false,
+    "alwaysShowChat": true,
+    "chatAndUsers": true,
     "lang": "en-gb"
   },
 
@@ -120,18 +119,16 @@
 
   /* Users for basic authentication. is_admin = true gives access to /admin.
      If you do not uncomment this, /admin will not be available! */
-  /*
   "users": {
-    "admin": {
-      "password": "changeme1",
+    "xideadmin": {
+      "password": "63G4WQsAbtn8u7Hw",
       "is_admin": true
     },
     "user": {
-      "password": "changeme1",
+      "password": "default",
       "is_admin": false
     }
   },
-  */
 
   // restrict socket.io transport methods
   "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
@@ -140,9 +137,7 @@
   "loadTest": false,
 
   // Disable indentation on new line when previous line ends with some special chars (':', '[', '(', '{')
-  /*
   "indentationOnNewLine": false,
-  */
 
   /* The toolbar buttons configuration.
   "toolbar": {
@@ -174,13 +169,12 @@
         { "type": "console"
         //, "category": "access"// only logs pad access
         }
-    /*
       , { "type": "file"
-      , "filename": "your-log-file-here.log"
+      , "filename": "etherpad.log"
       , "maxLogSize": 1024
       , "backups": 3 // how many log files there're gonna be at max
       //, "category": "test" // only log a specific category
-        }*/
+        }
     /*
       , { "type": "logLevelFilter"
         , "level": "warn" // filters out all log messages that have a lower level than "error"
