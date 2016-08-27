@@ -43,6 +43,7 @@ RUN mkdir /opt/mysql
 
 # Add conf files
 ADD settings.json /opt/etherpad/settings.json
+ADD index.html /opt/etherpad/src/templates/index.html
 ADD supervisor.conf /etc/supervisor/supervisor.conf
 
 EXPOSE 9001
