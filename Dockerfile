@@ -37,6 +37,7 @@ RUN cd /opt && git clone https://github.com/ether/etherpad-lite.git etherpad
 
 # Install node dependencies
 RUN /opt/etherpad/bin/installDeps.sh
+RUN cd /opt/etherpad && npm install ep_syntaxhighlighting
 # mkdir
 RUN mkdir /opt/mysql
 

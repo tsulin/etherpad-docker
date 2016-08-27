@@ -119,6 +119,7 @@
 
   /* Users for basic authentication. is_admin = true gives access to /admin.
      If you do not uncomment this, /admin will not be available! */
+    /*
   "users": {
     "xideadmin": {
       "password": "63G4WQsAbtn8u7Hw",
@@ -129,6 +130,7 @@
       "is_admin": false
     }
   },
+    */
 
   // restrict socket.io transport methods
   "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
