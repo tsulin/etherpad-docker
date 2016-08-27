@@ -47,16 +47,16 @@
    "dbSettings" : {
                     "user"    : "root",
                     "host"    : "localhost",
-                    "password": "simplepass",
+                    "password": "",
                     "database": "store",
                     "charset" : "utf8mb4"
                   },
 
   //the default text of a pad
-  "defaultPadText" : "\n\nint main(int argc, char *argv[])\n{\n\treturn 0;\n}\n\n",
+  "defaultPadText" : "\nint main(int argc, char *argv[])\n{\n    return 0;\n}\n\n",
   /* Default Pad behavior, users can override by changing */
   "padOptions": {
-    "noColors": false,
+    "noColors": true,
     "showControls": true,
     "showChat": true,
     "showLineNumbers": true,
