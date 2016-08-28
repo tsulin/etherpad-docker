@@ -46,5 +46,5 @@ ADD settings.json /opt/etherpad/settings.json
 ADD index.html /opt/etherpad/src/templates/index.html
 ADD supervisor.conf /etc/supervisor/supervisor.conf
 
-EXPOSE 9001
+EXPOSE 80
 CMD ["supervisord", "-c", "/etc/supervisor/supervisor.conf", "-n"]
